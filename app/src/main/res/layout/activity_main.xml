@@ -17,20 +17,20 @@
 
     <Button
         android:id="@+id/btn_get_para"
-        android:text="Get screen parameters"
+        android:text="Get screen parameters (G5)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 
     <Button
         android:id="@+id/btn_send_time"
-        android:text="Send Time Area"
+        android:text="Send Time Area (G5)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btn_send_text"
-        android:text="Send Text Area"
+        android:text="Send Text Area (G5)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -39,6 +39,25 @@
         android:text="Hello, world!"
         android:hint="Text to want to be sent"
         android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_get_para_g6"
+        android:text="Get screen parameters (G6)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btn_send_time_g6"
+        android:text="Send Time Area (G6)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_send_text_g6"
+        android:text="Send Text Area (G6)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
