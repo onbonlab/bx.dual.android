@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         Bx5GScreenClient screen = new Bx5GScreenClient("screen", new Bx5G());
                         try {
                             // 连接控制器
-                            if (!screen.connect("192.168.100.1", 5005)) {
+                            if (!screen.connect(ip.getText().toString(), 5005)) {
                                 System.out.println("connect failed");
                             }
 
