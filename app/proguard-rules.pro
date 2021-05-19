@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class onbon.bx06.message.area.DynamicArea.*
+-keepclassmembers class onbon.bx06.message.area.DynamicArea {
+    public *;
+}

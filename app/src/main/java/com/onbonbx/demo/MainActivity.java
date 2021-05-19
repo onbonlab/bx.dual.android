@@ -104,6 +104,21 @@ public class MainActivity extends AppCompatActivity {
                 }).start();
             }
         });
+
+
+        // 发送一个动态区
+        Button btnSendDynamicAreaG6 = findViewById(R.id.btn_send_dynamic_g6);
+        btnSendDynamicAreaG6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        BxG6Helper.sendDynamicAreaFor6Q(ip.getText().toString());
+                    }
+                }).start();
+            }
+        });
     }
 
 

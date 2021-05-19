@@ -11,6 +11,17 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            // VersionName后缀
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+        }
+
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -36,6 +47,7 @@ dependencies {
     implementation files('libs/uia-comm-0.3.3.jar')
     implementation files('libs/uia-utils-0.2.0.jar')
     implementation files('libs/uia-message-0.6.0.jar')
+    //implementation files('libs/dynamic.jar')
 
     implementation(name: 'java.awt4a-0.1-release', ext: 'aar')
 }
